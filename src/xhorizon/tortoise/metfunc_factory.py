@@ -123,6 +123,34 @@ def hayward(R=1.,l=0.1):
 	## return
 	return func
 
+# RLK EDIT: Mannheim-Kazanas metric of conformal Weyl gravity 
+def mannheim_kazanas(beta=1., gamma=1, kappa=0):
+	############################# INPUT #############################
+	## parameters
+	beta, gamma, kappa = float(beta), float(gamma), float(kappa)
+	fparams = dict(beta=beta, gamma=gamma, kappa=kappa)
+	Fparams = dict(eps=1e-9, inf=25., npoints_interp=500) 
+	
+	## metric function
+	f = lambda r: 1. - 3*beta*gamma - beta*(2 - 3*beta*gamma)/r + gamma*r - kappa*r**2 
+	
+	## zeroes and slopes of f(r) 
+	ri = math_util.pos_real_roots(np.array([-kappa, gamma, 1 - 3*beta*gamma, -beta*(2 - 3*beta*gamma)]))
+	ki = beta*(2 - 3*beta*gamma)/ri**2 + gamma - 2*kappa*ri
+	## info
+	info = {
+		'Type' : "Mannheim-Kazanas",
+		'Metric Function' : r"$f(r) = 1 - 3\beta\gamma - \beta(2 - 3\beta\gamma)/r + \gamma r - \kappa r^2$",
+		'Parameters' : ', '.join([r"$beta=%r$"%beta, r"$gamma=%r$"%gamma, r"$kappa=%r$"%kappa])
+		}
+	#################################################################
+	## store params in dict
+	params = dict(fparams=fparams, Fparams=Fparams, f=f, ri=ri, ki=ki, info=info)
+	## build
+	func = build_metfunc(params)
+	## return
+	return func
+
 
 def dS(L=10.):
 	############################# INPUT #############################

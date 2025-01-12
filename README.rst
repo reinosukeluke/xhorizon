@@ -3,7 +3,7 @@ xhorizon
 ================================
 
 
-*xhorizon*: Explicitly computing Penrose diagrams in general relativity.
+*xhorizon*: Explicitly computing Penrose diagrams in general relativity. Originally by J. C. Schindler. 
 
 A Python package.
 
@@ -16,7 +16,7 @@ A Python package.
 
 
 **Requests for info/specific tutorial updates welcomed, send to jcschindler01 at gmail.**
-
+**RLK edit: Added capability to graph the Mannheim-Kazanas metric of conformal Weyl gravity (DOI: `10.1086/167623 <https://articles.adsabs.harvard.edu/pdf/1989ApJ...342..635M>`)
 
 
 Links

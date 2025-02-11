@@ -17,7 +17,7 @@ A Python package.
 
 **Requests for info/specific tutorial updates welcomed, send to jcschindler01 at gmail.**
 
-**RLK edit**: Adding capability to graph the **Mannheim-Kazanas metric** (static, spherically symmetric, uncharged + nonrotating) of **conformal Weyl gravity** (DOI: `10.1086/167623 <https://articles.adsabs.harvard.edu/pdf/1989ApJ...342..635M>`_.)
+**RLK edit**: Adding capability to graph the **Mannheim-Kazanas metric** (static, spherically symmetric, uncharged + nonrotating black hole) of **conformal Weyl gravity** (DOI: `10.1086/167623 <https://articles.adsabs.harvard.edu/pdf/1989ApJ...342..635M>`_.)
 
 
 Links

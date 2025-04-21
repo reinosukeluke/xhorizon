@@ -43,6 +43,7 @@ def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False, labelsize=15):
 	ypad = 0
 	plt.xlabel(r'$V-U$', labelpad=xpad, labelsize=labelsize)
 	plt.ylabel(r'$V+U$', labelpad=ypad, labelsize=labelsize)
+	plt.tick_params(axis='both', labelsize=labelsize)  
 	## tilde instead of cap?
 	if tilde==True:
 		plt.xlabel(r'$\tilde{v}-\tilde{u}$', labelpad=xpad, labelsize=labelsize)

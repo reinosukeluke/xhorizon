@@ -41,12 +41,12 @@ def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False, labelsize=15):
 	## format axes
 	xpad = 4
 	ypad = 0
-	plt.xlabel(r'$V-U$', labelpad=xpad)
-	plt.ylabel(r'$V+U$', labelpad=ypad)
+	plt.xlabel(r'$V-U$', labelpad=xpad, labelsize=labelsize)
+	plt.ylabel(r'$V+U$', labelpad=ypad, labelsize=labelsize)
 	## tilde instead of cap?
 	if tilde==True:
-		plt.xlabel(r'$\tilde{v}-\tilde{u}$', labelpad=xpad)
-		plt.ylabel(r'$\tilde{v}+\tilde{u}$', labelpad=ypad)
+		plt.xlabel(r'$\tilde{v}-\tilde{u}$', labelpad=xpad, labelsize=labelsize)
+		plt.ylabel(r'$\tilde{v}+\tilde{u}$', labelpad=ypad, labelsize=labelsize)
 	## range
 	sqaxis = sqaxis * 1.1
 	plt.xlim(-sqaxis,sqaxis)

@@ -29,7 +29,7 @@ def pubrc(tex=False):
 
 
 
-def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False):
+def newfig(sqfig=4, sqaxis=4, tilde=False, tex=False, labelsize=15):
 	## set rc params
 	pubrc(tex=tex)
 	## new figure
